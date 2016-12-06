@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title th:text="${title}"></title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="/static/style.css" th:href="@{style.css}" rel="stylesheet" media="screen"/>
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+
+</head>
+
+<body>
+
+    <h1 th:text="${title}">Signin Form</h1>
+
+    <div class="body">
+
+        <p class="center">
+            <a class="button" href="?do=signin&amp;region=region1">Region 1</a>
+        </p>
+
+        <p class="center">
+            <a class="button" href="?do=signin&amp;region=region2">Region 2</a>
+        </p>
+
+        <p class="center">
+            <a class="button" href="?do=signin&amp;region=unknown_region">Unknown Region</a>
+        </p>
+
+    </div>
+
+</body>
+
+</html>

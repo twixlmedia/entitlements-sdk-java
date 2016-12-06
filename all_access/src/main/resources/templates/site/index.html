@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title th:text="${title}"></title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="/static/style.css" th:href="@{style.css}" rel="stylesheet" media="screen"/>
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+
+</head>
+
+<body>
+
+    <h1 th:text="${title}">Title</h1>
+
+    <div class="body">
+
+        <h2>Description</h2>
+
+        <p>This entitlements server allows you to login using a username and password.</p>
+
+        <p>After a successful login, the user get's access to all content in the application.</p>
+
+        <p>If the login fails, the user will not see any contents.</p>
+
+        <h2>Demo Credentials</h2>
+
+        <p>You can login with the following credentials:</p>
+        <p>
+            Username<br/>
+            <strong>test</strong>
+        </p>
+        <p>
+            Password<br/>
+            <strong>test</strong>
+        </p>
+
+        <h2>Configuration Details</h2>
+        <p>
+            Entitlements URL<br/>
+            <strong>http://localhost:8080/</strong>
+        </p>
+        <p>
+            URL Style<br/>
+            <strong>Path</strong>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
